@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 def isWordGuessed(secretWord,lettersGuessed):
     for x in secretWord:   
-      if x not in lettersGuessed:
+      if x in lettersGuessed:
+          return True
+      else:
           return False
-    return True
         
     
